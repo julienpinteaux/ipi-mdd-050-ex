@@ -1,9 +1,5 @@
 package com.ipiecoles.java.mdd050.service;
 
-import com.ipiecoles.java.mdd050.exception.EmployeException;
-import com.ipiecoles.java.mdd050.model.Employe;
-import com.ipiecoles.java.mdd050.repository.EmployeRepository;
-import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -13,9 +9,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
-import java.util.List;
-import java.util.Objects;
+import com.ipiecoles.java.mdd050.exception.EmployeException;
+import com.ipiecoles.java.mdd050.model.Employe;
+import com.ipiecoles.java.mdd050.repository.EmployeRepository;
 
 @Service
 public class EmployeService {
@@ -63,5 +59,4 @@ public class EmployeService {
     public Employe findMyMatricule(String matricule) {
        return this.employeRepository.findByMatricule(matricule);
     }
-
 }
