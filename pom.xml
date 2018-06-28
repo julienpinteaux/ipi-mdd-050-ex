@@ -4,10 +4,10 @@
   
       <groupId>com.ipiecoles.java.mdd050</groupId>
     <artifactId>ipi-mdd-050-ex</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <scm>
         <connection>scm:git:https://git@github.com/julienpinteaux/ipi-mdd-050-ex.git</connection>
-      <tag>HEAD</tag>
+      <tag>ipi-mdd-050-ex-1.1</tag>
   </scm>
 
     <parent>
